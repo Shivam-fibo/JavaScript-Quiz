@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #006064;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Question style */
+.ques {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #004d40;
+    text-align: center;
+}
+
+/* Options container style */
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Button style */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    width: 100%;
+}
+
+button:focus {
+    background-color: #0056b3;
+}
+
+.next_btn {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+.marks_btn {
+    margin-top: 20px;
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+.next_btn:hover {
+    background-color: #218838;
+}
+
+.marks_btn:hover {
+    background-color: #fdd835;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .ques {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .ques {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+}
